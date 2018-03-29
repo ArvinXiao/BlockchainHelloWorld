@@ -45,7 +45,7 @@ namespace BlockchainHelloWorld
             foreach(var t in pendingTransactions){
                 transactionAmount += t.Amount;
             }
-            var miningRewards = Uitls.FromatAmount(transactionAmount / 100 * 2); 
+            var miningRewards = Utils.FromatAmount(transactionAmount / 100 * 2); 
 
             //分配奖励给旷工
             this.pendingTransactions = new List<Transaction>(){new Transaction(string.Empty, miningRewardAddress, miningRewards)};
@@ -71,7 +71,7 @@ namespace BlockchainHelloWorld
                 }
             }
 
-            return Uitls.FromatAmount(balance);
+            return Utils.FromatAmount(balance);
         }
 
         //验证区块链是否有效

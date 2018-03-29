@@ -59,7 +59,7 @@ namespace BlockchainHelloWorld
         {
             double max = 100;
             double min = 1;
-            return Uitls.FromatAmount((decimal)((new Random().NextDouble()) * (max - min) + min));
+            return Utils.FromatAmount((decimal)((new Random().NextDouble()) * (max - min) + min));
         }
 
         //生成测试账户
